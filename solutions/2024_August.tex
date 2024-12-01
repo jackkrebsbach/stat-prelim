@@ -1,0 +1,95 @@
+\documentclass{extarticle}
+\usepackage{graphicx} 
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+\newcommand{\diff}{\ensuremath{\operatorname{d}\!}}
+
+\title{APPM Statistics Preliminary Exams}
+
+\begin{document}
+\author{}
+
+\maketitle
+
+\newpage
+
+\section*{August 2024}
+
+\begin{enumerate}
+
+    \item Let $\lambda>0$ and $0<p<1$ be real constants. Suppose that $N \sim \operatorname{Poisson}(\lambda)$ and that, conditioned on $N=n, B \sim \operatorname{Binomial}(n, p)$. In particular, $B=0$ when $N=0$.
+    
+(a) Show that $B \sim \operatorname{Poisson}(\lambda p)$.
+
+(b) Without further calculations, what should the distribution of $(N-B)$ be?
+
+(c) Finally, show that $B$ and $(N-B)$ are independent.
+
+\item
+In what follows, $\xrightarrow{p}$ and $\xrightarrow{d}$ denote convergence in probability and distribution of random variables, respectively. Additionally, "a.s." stands for almost surely.
+
+(a) Is it TRUE that if $X_n \xrightarrow{d} 0$ then $X_n \xrightarrow{p} 0$ ? If so, show this using the definitions of convergence in probability and distribution, otherwise provide a counter-example.
+
+(b) Let $\left(X_i\right)_{i \geq 0}$ be a sequence of independent and identically distributed (i.i.d.) random variables with mean 2 and variance 1 . Invoking well-known a.s. convergence results, which you must name explicitly as part of your solution, justify the existence of the following limit in the a.s. sense, and determine it explicitly.
+
+$$
+\lim _{n \rightarrow \infty} \frac{\sum_{i=1}^n X_i^2}{\sqrt{n \cdot \sum_{i=1}^n\left(X_i-\bar{X}\right)^2}}, \text { where } \bar{X}:=\frac{1}{n} \sum_{i=1}^n X_i \text {. }
+$$
+
+\item 
+Suppose $X_1, \ldots, X_n$ with $n>3$ are i.i.d. exponential with rate parameter $\lambda>0$ (that is, with mean $1 / \lambda$ ). We will consider estimation of $\lambda$.
+
+(a) Find the expectation of $1 / \bar{X}$.
+
+(b) Based on (a), find an unbiased estimator for $\lambda$.
+
+(c) Find the mean squared error (MSE) of $1 / \bar{X}$, and the MSE of your estimator from part (b). Which one is smaller?
+
+
+
+\item 
+Suppose $X_1, \ldots, X_n$ are i.i.d. with p.d.f.
+
+
+$$f(x ; \lambda)=\lambda^2 x e^{-\lambda x}, \quad x>0,$$
+
+where $\lambda>0$ is unknown.
+
+(a) Find a maximum likelihood estimator (MLE) for $\lambda$.
+
+(b) Find the asymptotic distribution of your MLE from (a).
+
+(c) Find an MLE for $e^{-\lambda}$.
+
+(d) Find the asymptotic distribution of your MLE from (c).
+
+
+\item
+Let $Y_1, \ldots, Y_n$ be independent, with $Y_i \sim \operatorname{Poisson}\left(a_i \cdot \nu\right)$ for some known constants $a_i$ and unknown $\nu>0$.
+
+(a) Find the joint p.m.f. of $Y_1, \ldots, Y_n$
+
+(b) Find a sufficient and complete statistic for $\nu$.
+
+(c) Determine the unique UMVUE of $\nu$.
+
+(d) Determine the unique UMVUE of $\nu^2$.
+
+
+\item 
+
+Let $Y_1, \ldots, Y_n$ be independent, with $Y_i \sim \operatorname{Poisson}\left(a_i \cdot \nu\right)$ for some known constants $a_i$ and unknown $\nu>0$.
+
+(a) Find the joint p.m.f. of $Y_1, \ldots, Y_n$
+
+(b) Find a sufficient and complete statistic for $\nu$.
+
+(c) Determine the unique UMVUE of $\nu$.
+
+(d) Determine the unique UMVUE of $\nu^2$.
+
+\end{enumerate}
+
+
+\end{document}
+
